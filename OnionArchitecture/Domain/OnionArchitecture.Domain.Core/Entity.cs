@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Domain
+﻿namespace OnionArchitecture.Domain.Core
 {
     public abstract class Entity
     {

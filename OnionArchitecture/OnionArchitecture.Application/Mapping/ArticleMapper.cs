@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using OnionArchitecture.Application.DTO;
-using OnionArchitecture.Domain.Entities;
+using OnionArchitecture.Domain.Core;
 
 namespace OnionArchitecture.Application.Mapping
 {

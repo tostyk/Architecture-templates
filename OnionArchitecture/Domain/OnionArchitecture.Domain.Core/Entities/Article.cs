@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Domain.Entities
+﻿namespace OnionArchitecture.Domain.Core
 {
     public class Article : Entity
     {

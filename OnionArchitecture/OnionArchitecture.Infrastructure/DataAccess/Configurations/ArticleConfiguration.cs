@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using OnionArchitecture.Domain.Entities;
+using OnionArchitecture.Domain.Core;
 
 namespace OnionArchitecture.Infrastructure.DataAccess.Configurations
 {

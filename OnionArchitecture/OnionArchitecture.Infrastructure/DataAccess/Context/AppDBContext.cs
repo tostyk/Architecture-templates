@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitecture.Domain.Entities;
+using OnionArchitecture.Domain.Core;
 using System.Reflection;
 
 namespace OnionArchitecture.Infrastructure.DataAccess.Context

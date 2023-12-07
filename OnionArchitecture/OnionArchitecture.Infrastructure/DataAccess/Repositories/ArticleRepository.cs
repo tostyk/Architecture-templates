@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitecture.Domain.Entities;
-using OnionArchitecture.Domain.Repositories;
+using OnionArchitecture.Domain.Core;
+using OnionArchitecture.Domain.Interfaces;
 using OnionArchitecture.Infrastructure.DataAccess.Context;
 
 namespace OnionArchitecture.Infrastructure.DataAccess.Repositories

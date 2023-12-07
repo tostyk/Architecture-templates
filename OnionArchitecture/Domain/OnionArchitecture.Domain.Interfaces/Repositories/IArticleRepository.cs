@@ -1,6 +1,6 @@
-﻿using OnionArchitecture.Domain.Entities;
+﻿using OnionArchitecture.Domain.Core;
 
-namespace OnionArchitecture.Domain.Repositories
+namespace OnionArchitecture.Domain.Interfaces
 {
     public interface IArticleRepository
     {

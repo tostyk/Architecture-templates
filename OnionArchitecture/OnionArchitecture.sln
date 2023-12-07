@@ -3,13 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Domain", "OnionArchitecture.Domain\OnionArchitecture.Domain.csproj", "{439784DA-E6AD-48B8-9407-D80AD3C031DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Domain.Core", "Domain\OnionArchitecture.Domain.Core\OnionArchitecture.Domain.Core.csproj", "{439784DA-E6AD-48B8-9407-D80AD3C031DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure", "OnionArchitecture.Infrastructure\OnionArchitecture.Infrastructure.csproj", "{E8DA58A3-D6C7-4F10-966C-A48253B2DD46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure", "OnionArchitecture.Infrastructure\OnionArchitecture.Infrastructure.csproj", "{E8DA58A3-D6C7-4F10-966C-A48253B2DD46}"
+	ProjectSection(ProjectDependencies) = postProject
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {614DA341-47E7-4F12-82AB-2B025F9DEC87}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Application", "OnionArchitecture.Application\OnionArchitecture.Application.csproj", "{A209B010-2635-423A-98CC-5EBA8C959B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Application", "OnionArchitecture.Application\OnionArchitecture.Application.csproj", "{A209B010-2635-423A-98CC-5EBA8C959B6C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {614DA341-47E7-4F12-82AB-2B025F9DEC87}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Presentation", "OnionArchitecture.Presentation\OnionArchitecture.Presentation.csproj", "{B35A6CEA-C710-415D-8966-8ED209BCEDC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Presentation", "OnionArchitecture.Presentation\OnionArchitecture.Presentation.csproj", "{B35A6CEA-C710-415D-8966-8ED209BCEDC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B4210301-F360-4823-A61F-74BBDC2E370E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Domain.Interfaces", "Domain\OnionArchitecture.Domain.Interfaces\OnionArchitecture.Domain.Interfaces.csproj", "{614DA341-47E7-4F12-82AB-2B025F9DEC87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{439784DA-E6AD-48B8-9407-D80AD3C031DF} = {439784DA-E6AD-48B8-9407-D80AD3C031DF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +46,17 @@ Global
 		{B35A6CEA-C710-415D-8966-8ED209BCEDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B35A6CEA-C710-415D-8966-8ED209BCEDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B35A6CEA-C710-415D-8966-8ED209BCEDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{439784DA-E6AD-48B8-9407-D80AD3C031DF} = {B4210301-F360-4823-A61F-74BBDC2E370E}
+		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {B4210301-F360-4823-A61F-74BBDC2E370E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {511F147D-0C0B-4941-B6A9-AE0D75E4C636}

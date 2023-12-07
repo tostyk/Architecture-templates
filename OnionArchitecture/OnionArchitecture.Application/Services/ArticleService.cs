@@ -2,8 +2,8 @@
 using OnionArchitecture.Application.DTO;
 using OnionArchitecture.Application.Exceptions;
 using OnionArchitecture.Application.Interfaces;
-using OnionArchitecture.Domain.Entities;
-using OnionArchitecture.Domain.Repositories;
+using OnionArchitecture.Domain.Core;
+using OnionArchitecture.Domain.Interfaces;
 
 namespace OnionArchitecture.Application.Services
 {

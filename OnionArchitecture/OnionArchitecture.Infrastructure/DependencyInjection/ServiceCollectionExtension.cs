@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnionArchitecture.Domain.Repositories;
+using OnionArchitecture.Domain.Interfaces;
 using OnionArchitecture.Infrastructure.DataAccess.Context;
 using OnionArchitecture.Infrastructure.DataAccess.Repositories;
 
