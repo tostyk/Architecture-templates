@@ -5,24 +5,37 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Domain.Core", "Domain\OnionArchitecture.Domain.Core\OnionArchitecture.Domain.Core.csproj", "{439784DA-E6AD-48B8-9407-D80AD3C031DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure", "OnionArchitecture.Infrastructure\OnionArchitecture.Infrastructure.csproj", "{E8DA58A3-D6C7-4F10-966C-A48253B2DD46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Data", "Infrastructure\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj", "{E8DA58A3-D6C7-4F10-966C-A48253B2DD46}"
 	ProjectSection(ProjectDependencies) = postProject
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {614DA341-47E7-4F12-82AB-2B025F9DEC87}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Application", "OnionArchitecture.Application\OnionArchitecture.Application.csproj", "{A209B010-2635-423A-98CC-5EBA8C959B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Business", "Infrastructure\OnionArchitecture.Infrastructure.Business\OnionArchitecture.Infrastructure.Business.csproj", "{A209B010-2635-423A-98CC-5EBA8C959B6C}"
 	ProjectSection(ProjectDependencies) = postProject
+		{50695285-333C-4DA0-82DE-53A5381B7BC5} = {50695285-333C-4DA0-82DE-53A5381B7BC5}
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {614DA341-47E7-4F12-82AB-2B025F9DEC87}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Presentation", "OnionArchitecture.Presentation\OnionArchitecture.Presentation.csproj", "{B35A6CEA-C710-415D-8966-8ED209BCEDC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E8DA58A3-D6C7-4F10-966C-A48253B2DD46} = {E8DA58A3-D6C7-4F10-966C-A48253B2DD46}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B4210301-F360-4823-A61F-74BBDC2E370E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Domain.Interfaces", "Domain\OnionArchitecture.Domain.Interfaces\OnionArchitecture.Domain.Interfaces.csproj", "{614DA341-47E7-4F12-82AB-2B025F9DEC87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Domain.Interfaces", "Domain\OnionArchitecture.Domain.Interfaces\OnionArchitecture.Domain.Interfaces.csproj", "{614DA341-47E7-4F12-82AB-2B025F9DEC87}"
 	ProjectSection(ProjectDependencies) = postProject
 		{439784DA-E6AD-48B8-9407-D80AD3C031DF} = {439784DA-E6AD-48B8-9407-D80AD3C031DF}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Services.Interfaces", "Services\OnionArchitecture.Services.Interfaces\OnionArchitecture.Services.Interfaces.csproj", "{50695285-333C-4DA0-82DE-53A5381B7BC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{439784DA-E6AD-48B8-9407-D80AD3C031DF} = {439784DA-E6AD-48B8-9407-D80AD3C031DF}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8B0A4F2D-C0EF-4E3B-B5F3-3C45A0FED1DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D2BBD46E-66A4-43C1-8CC3-42D3B19D1533}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,13 +63,20 @@ Global
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50695285-333C-4DA0-82DE-53A5381B7BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50695285-333C-4DA0-82DE-53A5381B7BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50695285-333C-4DA0-82DE-53A5381B7BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50695285-333C-4DA0-82DE-53A5381B7BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{439784DA-E6AD-48B8-9407-D80AD3C031DF} = {B4210301-F360-4823-A61F-74BBDC2E370E}
+		{E8DA58A3-D6C7-4F10-966C-A48253B2DD46} = {8B0A4F2D-C0EF-4E3B-B5F3-3C45A0FED1DC}
+		{A209B010-2635-423A-98CC-5EBA8C959B6C} = {8B0A4F2D-C0EF-4E3B-B5F3-3C45A0FED1DC}
 		{614DA341-47E7-4F12-82AB-2B025F9DEC87} = {B4210301-F360-4823-A61F-74BBDC2E370E}
+		{50695285-333C-4DA0-82DE-53A5381B7BC5} = {D2BBD46E-66A4-43C1-8CC3-42D3B19D1533}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {511F147D-0C0B-4941-B6A9-AE0D75E4C636}

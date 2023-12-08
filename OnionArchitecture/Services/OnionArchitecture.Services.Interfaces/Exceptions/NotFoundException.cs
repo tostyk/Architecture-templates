@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Application.Exceptions
+﻿namespace OnionArchitecture.Services.Interfaces.Exceptions
 {
     public class NotFoundException : Exception
     {

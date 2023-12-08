@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnionArchitecture.Application.DTO;
-using OnionArchitecture.Application.Interfaces;
 using OnionArchitecture.Presentation.Middleware;
+using OnionArchitecture.Services.Interfaces;
+using OnionArchitecture.Services.Interfaces.DTO;
 
 namespace OnionArchitecture.Presentation.Controllers
 {

@@ -2,7 +2,7 @@
 using OnionArchitecture.Domain.Core;
 using System.Reflection;
 
-namespace OnionArchitecture.Infrastructure.DataAccess.Context
+namespace OnionArchitecture.Infrastructure.Data.Context
 {
     public class AppDBContext : DbContext
     {

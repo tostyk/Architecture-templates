@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace OnionArchitecture.Application
+namespace OnionArchitecture.Infrastructure
 {
     public static class AssemblyReference
     {

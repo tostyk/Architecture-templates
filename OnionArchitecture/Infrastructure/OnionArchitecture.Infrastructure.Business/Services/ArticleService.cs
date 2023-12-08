@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using OnionArchitecture.Application.DTO;
-using OnionArchitecture.Application.Exceptions;
-using OnionArchitecture.Application.Interfaces;
 using OnionArchitecture.Domain.Core;
 using OnionArchitecture.Domain.Interfaces;
+using OnionArchitecture.Services.Interfaces;
+using OnionArchitecture.Services.Interfaces.DTO;
+using OnionArchitecture.Services.Interfaces.Exceptions;
 
-namespace OnionArchitecture.Application.Services
+namespace OnionArchitecture.Infrastructure.Business.Services
 {
     public class ArticleService : IArticleService
     {

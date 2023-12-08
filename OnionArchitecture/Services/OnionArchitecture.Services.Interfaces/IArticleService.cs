@@ -1,6 +1,6 @@
-﻿using OnionArchitecture.Application.DTO;
+﻿using OnionArchitecture.Services.Interfaces.DTO;
 
-namespace OnionArchitecture.Application.Interfaces
+namespace OnionArchitecture.Services.Interfaces
 {
     public interface IArticleService
     {

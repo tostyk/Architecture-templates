@@ -1,5 +1,5 @@
-﻿namespace OnionArchitecture.Application.Exceptions
-{ 
+﻿namespace OnionArchitecture.Services.Interfaces.Exceptions
+{
     public class ArgumentException : Exception
     {
         public ArgumentException() { }

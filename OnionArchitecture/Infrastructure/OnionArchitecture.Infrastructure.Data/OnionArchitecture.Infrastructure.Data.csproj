@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\OnionArchitecture.Domain.Core\OnionArchitecture.Domain.Core.csproj" />
-    <ProjectReference Include="..\Domain\OnionArchitecture.Domain.Interfaces\OnionArchitecture.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Domain\OnionArchitecture.Domain.Core\OnionArchitecture.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Domain\OnionArchitecture.Domain.Interfaces\OnionArchitecture.Domain.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

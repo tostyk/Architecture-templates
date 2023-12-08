@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using OnionArchitecture.Application.DTO;
 using OnionArchitecture.Domain.Core;
+using OnionArchitecture.Services.Interfaces.DTO;
 
-namespace OnionArchitecture.Application.Mapping
+namespace OnionArchitecture.Infrastructure.Business.Mapping
 {
     public class ArticleMapper : Profile
     {

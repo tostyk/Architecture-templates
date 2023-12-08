@@ -1,12 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using OnionArchitecture.Application.Interfaces;
-using OnionArchitecture.Application.Services;
+using OnionArchitecture.Infrastructure.Business.Services;
+using OnionArchitecture.Services.Interfaces;
 
-namespace OnionArchitecture.Application.DependencyInjection
+namespace OnionArchitecture.Infrastructure.Business.DependencyInjection
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+        public static IServiceCollection AddBusinessInfrastructure(this IServiceCollection services)
         {
             services.AddTransient<IArticleService, ArticleService>();
 

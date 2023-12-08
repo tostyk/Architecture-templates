@@ -1,4 +1,4 @@
-﻿using OnionArchitecture.Application.Exceptions;
+﻿using OnionArchitecture.Services.Interfaces.Exceptions;
 using System.Net;
 using System.Text.Json;
 
@@ -34,7 +34,7 @@ namespace OnionArchitecture.Presentation.Middleware
                 case NotFoundException:
                     code = HttpStatusCode.NotFound;
                     break;
-                case Application.Exceptions.ArgumentException:
+                case Services.Interfaces.Exceptions.ArgumentException:
                     code = HttpStatusCode.BadRequest;
                     break;
                 case AlreadyExistsException:

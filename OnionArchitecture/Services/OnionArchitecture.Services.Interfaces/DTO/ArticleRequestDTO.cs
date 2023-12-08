@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Application.DTO
+﻿namespace OnionArchitecture.Services.Interfaces.DTO
 {
     public class ArticleRequestDTO
     {

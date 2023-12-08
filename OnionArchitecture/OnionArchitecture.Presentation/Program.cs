@@ -1,5 +1,5 @@
-using OnionArchitecture.Application.DependencyInjection;
-using OnionArchitecture.Infrastructure.DependencyInjection;
+using OnionArchitecture.Infrastructure.Business.DependencyInjection;
+using OnionArchitecture.Infrastructure.Data.DependencyInjection;
 using OnionArchitecture.Presentation.Middleware;
 
 namespace OnionArchitecture.Presentation
@@ -12,8 +12,8 @@ namespace OnionArchitecture.Presentation
             var config = builder.Configuration;
 
             builder.Services
-                .AddApplication()
-                .AddInfrastructure(config);
+                .AddBusinessInfrastructure()
+                .AddDataInfrastructure(config);
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

@@ -2,14 +2,14 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnionArchitecture.Domain.Interfaces;
-using OnionArchitecture.Infrastructure.DataAccess.Context;
-using OnionArchitecture.Infrastructure.DataAccess.Repositories;
+using OnionArchitecture.Infrastructure.Data.Context;
+using OnionArchitecture.Infrastructure.Data.Repositories;
 
-namespace OnionArchitecture.Infrastructure.DependencyInjection
+namespace OnionArchitecture.Infrastructure.Data.DependencyInjection
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddDataInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IArticleRepository, ArticleRepository>();
 

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnionArchitecture.Domain.Core;
 using OnionArchitecture.Domain.Interfaces;
-using OnionArchitecture.Infrastructure.DataAccess.Context;
+using OnionArchitecture.Infrastructure.Data.Context;
 
-namespace OnionArchitecture.Infrastructure.DataAccess.Repositories
+namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class ArticleRepository(AppDBContext dbContext) : IArticleRepository
     {
